@@ -1,2 +1,2 @@
 # ssmctl
-AWS SSM Connector (WIP)
+AWS SSM Session Connector (WIP)
