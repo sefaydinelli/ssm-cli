@@ -1,9 +1,9 @@
 #!/bin/bash
-# AWS SSM Connector
+# AWS SSM Session Connector
 
 if [ -z $1 ]
 then
-    echo "AWS SSM Connector"
+    echo "AWS SSM Session Connector"
     read -p "Enter the region [eu-west-1] : " aws_region
     aws_region=${aws_region:-eu-west-1}
     aws ec2 describe-instances --region $aws_region --query 'Reservations[].Instances[].[Tags[?Key==`Name`]| [0].Value,InstanceId,State.Name]' --output table | sort -n
@@ -15,6 +15,7 @@ elif [ $1 == 'help' ]
 then
     echo "Help section. WIP"
 else
+    echo "AWS SSM Session Connector"
     read -p "Enter the region [eu-west-1] : " aws_region
     aws_region=${aws_region:-eu-west-1}
     echo "Connecting to $1 on $aws_region with SSM";
