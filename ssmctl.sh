@@ -20,7 +20,10 @@ then
 # help section
 elif [[ $1 == 'help' ]] && [[ -z $2 ]]
 then
-    echo "Help section. WIP"
+    echo "ssmctl                  :  List all instances in default region. "
+    echo "ssmctl <instance_id>    :  Connect to instance with instance ID on default region."
+    echo "ssmctl -r               :  Select region and list all instances on that region."
+    echo "ssmctl -r <instance_id> :  Select region and connect to instance with instance ID on selected region."
 # select region and list instances
 elif [[ $1 == '-r' ]] && [[ -z $2 ]]
 then
