@@ -11,18 +11,11 @@ With this tool, you can connect AWS instances with using SSM Session Manager via
 
 - You can use this command to install ```ssmctl``` tool :
 
-#### For MacOS :
+#### For MacOS & Linux :
 ```
 curl https://raw.githubusercontent.com/sefaydinelli/ssmctl/main/ssmctl.sh > ssmctl && \
     sudo cp ssmctl /usr/local/bin/ && \
     sudo chmod +x /usr/local/bin/ssmctl
-```
-
-#### For Ubuntu :
-```
-curl https://raw.githubusercontent.com/sefaydinelli/ssmctl/main/ssmctl.sh > ssmctl && \
-    sudo mv ssmctl /usr/bin/ && \
-    sudo chmod +x /usr/bin/ssmctl
 ```
 
 After this, you can use ```ssmctl help``` command.
