@@ -13,12 +13,12 @@ With this tool, you can connect AWS instances with using SSM Session Manager via
 
 #### For MacOS & Linux :
 ```
-curl https://raw.githubusercontent.com/sefaydinelli/ssmctl/main/ssmctl.sh > ssmctl && \
-    sudo cp ssmctl /usr/local/bin/ && \
-    sudo chmod +x /usr/local/bin/ssmctl
+curl https://raw.githubusercontent.com/sefaydinelli/ssmctl/main/ssmctl.sh > ssm && \
+    sudo cp ssm /usr/local/bin/ && \
+    sudo chmod +x /usr/local/bin/ssm
 ```
 
-After this, you can use ```ssmctl help``` command.
+After this, you can use ```ssm help``` command.
 
 
 
